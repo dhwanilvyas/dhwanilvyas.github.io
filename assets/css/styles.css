@@ -1,0 +1,55 @@
+body {
+  padding: 20px;
+  font-family: 'Oxygen', sans-serif !important;
+}
+
+a {
+  text-decoration: none;
+  color: #000000 !important;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000000 !important;
+}
+
+.padding-top-container {
+  padding-top: 40px;
+}
+
+.padding-1 {
+  padding: 0 1rem 0 1rem;
+}
+
+.profile-img {
+  height: 200px;
+  width: auto;
+  margin: auto;
+}
+
+.skills .panel-body {
+  background-color: #E3F2FD;
+  padding: 0 0 0 15px;
+}
+
+.width-60 {
+  width: 60%;
+}
+.width-65 {
+  width: 65%;
+}
+.width-70 {
+  width: 70%;
+}
+.width-75 {
+  width: 75%;
+}
+.width-80 {
+  width: 80%;
+}
+.width-85 {
+  width: 85%;
+}
+.width-90 {
+  width: 90%;
+}
