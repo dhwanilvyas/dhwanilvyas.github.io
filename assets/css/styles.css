@@ -14,7 +14,7 @@ a:hover {
 }
 
 .padding-top-container {
-  padding-top: 40px;
+  padding-top: 70px;
 }
 
 .padding-1 {
@@ -27,29 +27,6 @@ a:hover {
   margin: auto;
 }
 
-.skills .panel-body {
-  background-color: #E3F2FD;
-  padding: 0 0 0 15px;
-}
-
-.width-60 {
-  width: 60%;
-}
-.width-65 {
-  width: 65%;
-}
-.width-70 {
-  width: 70%;
-}
-.width-75 {
-  width: 75%;
-}
-.width-80 {
-  width: 80%;
-}
-.width-85 {
-  width: 85%;
-}
-.width-90 {
-  width: 90%;
+.about {
+  font-size: 1.5rem;
 }
