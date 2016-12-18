@@ -12,10 +12,6 @@ a:hover {
   color: #000000 !important;
 }
 
-.padding-top-container {
-  padding-top: 70px;
-}
-
 .padding-1 {
   padding: 0 1rem 0 1rem;
 }
@@ -24,4 +20,15 @@ a:hover {
   height: 200px;
   width: auto;
   margin: auto;
+}
+
+.home-container {
+  text-align: center;
+  padding: 100px 10px;
+  background-color: #ECEFF1;
+}
+
+.about-text {
+  font-size:1.8rem;
+  padding-top: 20px;
 }
