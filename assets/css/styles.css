@@ -52,9 +52,9 @@ a:hover {
   color: #FFFFFF !important;
 }
 
-.about-container, .education-container, .experience-container {
+/*.about-container, .education-container, .experience-container {
   padding: 30px;
-}
+}*/
 
 .about-text {
   font-size:1.8rem;
