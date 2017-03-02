@@ -1,34 +1,74 @@
 body {
-  font-family: 'Oxygen', sans-serif !important;
+  font-family: 'Oxygen', sans-serif;
+  background-color: #FAFAFA;
 }
 
-a {
-  text-decoration: none;
-  color: #000000 !important;
+h1 {
+  line-height: 4rem !important;
+}
+
+h1 {
+  font-size: 5.0vh !important;
+}
+h2 {
+  font-size: 4.0vh !important;
+}
+
+hr {
+  margin: 0;
+}
+
+::-moz-selection {
+  color: #FFFFFF;
+  background: #2A3A3F;
+}
+
+::selection {
+  color: #FFFFFF;
+  background: #2A3A3F;
 }
 
 a:hover {
   text-decoration: none;
-  color: #000000 !important;
-}
-
-.padding-1 {
-  padding: 0 1rem 0 1rem;
+  color: #FFFFFF !important;
 }
 
 .profile-img {
   height: 200px;
   width: auto;
   margin: auto;
+  border: 2px solid #FFFFFF;
 }
 
 .home-container {
   text-align: center;
-  padding: 100px 10px;
-  background-color: #ECEFF1;
+  padding: 80px 10px;
+  background-size: cover;
+  background-color: #F5F5F5;
+  background-image: url('../img/background.png');
+}
+
+.home-container h1 {
+  color: #FFFFFF !important;
+}
+
+.about-container, .education-container, .experience-container {
+  padding: 30px;
 }
 
 .about-text {
   font-size:1.8rem;
-  padding-top: 20px;
+}
+
+footer {
+  background-color: #2A3A3F;
+  padding: 30px;
+  text-align: center;
+}
+
+footer a {
+  margin: 0 1rem;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: rgba(255,255,255,0.6) !important;
 }
