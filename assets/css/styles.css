@@ -9,12 +9,8 @@ h1 {
 h1 {
   font-size: 5.0vh !important;
 }
-h2 {
+h4 {
   font-size: 4.0vh !important;
-}
-
-hr {
-  margin: 0;
 }
 
 ::-moz-selection {
