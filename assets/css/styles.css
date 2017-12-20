@@ -1,6 +1,5 @@
 body {
   font-family: 'Oxygen', sans-serif;
-  background-color: #FAFAFA;
 }
 
 h1 {
@@ -30,7 +29,6 @@ hr {
 
 a:hover {
   text-decoration: none;
-  color: #FFFFFF !important;
 }
 
 .profile-img {
@@ -42,33 +40,20 @@ a:hover {
 
 .home-container {
   text-align: center;
-  padding: 80px 10px;
-  background-size: cover;
-  background-color: #F5F5F5;
-  background-image: url('../img/background.png');
+  padding-top: 20px;
 }
 
-.home-container h1 {
-  color: #FFFFFF !important;
+.about-container {
+  padding: 20px;
 }
-
-/*.about-container, .education-container, .experience-container {
-  padding: 30px;
-}*/
 
 .about-text {
   font-size:1.8rem;
 }
 
-footer {
-  background-color: #2A3A3F;
-  padding: 30px;
-  text-align: center;
-}
-
-footer a {
+.links a {
   margin: 0 1rem;
   font-size: 2.5rem;
   text-decoration: none;
-  color: rgba(255,255,255,0.6) !important;
+  color: #2e2e2e !important;
 }
