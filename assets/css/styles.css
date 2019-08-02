@@ -30,7 +30,6 @@ a:hover {
 .profile-img {
   height: 200px;
   width: auto;
-  margin: auto;
   border: 1px solid #000000;
 }
 
@@ -40,6 +39,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .about-container {
