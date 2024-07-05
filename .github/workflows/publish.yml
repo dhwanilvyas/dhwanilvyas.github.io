@@ -28,7 +28,7 @@ jobs:
           node-version: 20
 
       - name: Setup bun
-        uses: oven-sh/setup-bun@v
+        uses: oven-sh/setup-bun@v1
 
       - name: Cache dependencies ⚡
         id: cache_dependencies
