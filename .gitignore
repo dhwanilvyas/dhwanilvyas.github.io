@@ -34,3 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+scripts/nisargopchar-dev-firebase-adminsdk-b21kf-ff58f18b57.json
+scripts/node_modules

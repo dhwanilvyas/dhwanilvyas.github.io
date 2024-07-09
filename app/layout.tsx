@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Varela_Round as Round } from "next/font/google";
+import { GoogleTagManager } from '@next/third-parties/google'
 import "./globals.css";
 
 const inter = Round({ weight: "400", subsets: ["latin"] });
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
+      <GoogleTagManager gtmId="G-REV0NK79N4" />
     </html>
   );
 }
