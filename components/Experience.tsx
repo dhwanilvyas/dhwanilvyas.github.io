@@ -15,7 +15,7 @@ const Experience = () => {
           <div className="mb-2 text-sm font-normal text-gray-500">SDE 2</div>
           <div className="mb-4 text-sm font-normal text-gray-500">
             Part of the team which manages a critical business product used by
-            Atlassian partners using React, styled-components, GraphQL etc.
+            Atlassian partners using React, Typescript, styled-components, GraphQL etc.
           </div>
         </li>
         <li className="mb-10 ms-4">
