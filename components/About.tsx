@@ -4,7 +4,7 @@ import React from "react";
 const About = () => {
   return (
     <div className="leading-7">
-      <p>Hola world 👋 </p>
+      <p>Hello 👋 </p>
       <br />
       <p>
         I am Dhwanil, a passionate software engineer based out of Gujarat,
