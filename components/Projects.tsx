@@ -1,33 +1,40 @@
-import React from "react";
+const PROJECTS = [
+  {
+    href: "https://play.google.com/store/apps/details?id=com.mdtsindia",
+    name: "RTO app",
+    description:
+      "Single handedly built a cross-platform mobile application (React Native, Firebase) with 50k+ downloads, enabling users to practice for driver's license tests online.",
+  },
+  {
+    href: "#",
+    name: "Employee management system",
+    description:
+      "Built a web application (React, Node.js, firebase) for managing employee data, including attendance, and salary management.",
+  },
+];
 
-const Projects = () => {
-  return <p>Will add details here soon.</p>;
-
+export default function Projects() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 w-full gap-x-10 gap-y-5">
-      <div className="mt-5" style={{ transform: "none " }}>
-        <a target="_blank" rel="noopener noreferrer" href="#">
-          <img
-            alt="Meditations App"
-            loading="lazy"
-            width="30"
-            height="30"
-            decoding="async"
-            data-nimg="1"
-            className="rounded-lg mb-3"
-            style={{ color: "transparent" }}
-            src="/images/projects/syntaxUI.svg"
-          />
-          <div className="text-sm mb-1 font-medium text-gray-900">
-            Meditations App
-          </div>
-          <div className="max-w-xs text-sm font-normal text-gray-500">
-            An app for organizing book notes and personal reflections.
-          </div>
-        </a>
+    <section id="projects" className="portfolio-section">
+      <h2 className="section-title">Projects</h2>
+      <p className="section-subtitle">Things I&apos;ve built</p>
+      <div className="projects-grid">
+        {PROJECTS.map(({ href, name, description }) => (
+          <a
+            key={name}
+            href={href}
+            className="project-card fade-in"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h3>{name}</h3>
+            <p>{description}</p>
+            <span className="project-link">
+              View project <i className="fas fa-external-link-alt" />
+            </span>
+          </a>
+        ))}
       </div>
-    </div>
+    </section>
   );
-};
-
-export default Projects;
+}

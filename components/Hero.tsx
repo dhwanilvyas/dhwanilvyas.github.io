@@ -1,78 +1,77 @@
-import React from "react";
+"use client";
 
-const Hero = () => {
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { ChevronDown } from "lucide-react";
+
+const TITLES = [
+  "Software Engineer",
+  "React Developer",
+  "Full Stack Developer",
+  "Mobile Developer",
+];
+
+export default function Hero() {
+  const [titleIndex, setTitleIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentTitle = TITLES[titleIndex];
+    const typeSpeed = isDeleting ? 50 : 100;
+
+    const timeout = setTimeout(
+      () => {
+        if (isDeleting) {
+          if (charIndex === 0) {
+            setIsDeleting(false);
+            setTitleIndex((i) => (i + 1) % TITLES.length);
+          } else {
+            setCharIndex((c) => c - 1);
+          }
+        } else {
+          if (charIndex === currentTitle.length) {
+            setIsDeleting(true);
+          } else {
+            setCharIndex((c) => c + 1);
+          }
+        }
+      },
+      !isDeleting && charIndex === currentTitle.length
+        ? 2000
+        : isDeleting && charIndex === 0
+          ? 500
+          : typeSpeed
+    );
+
+    return () => clearTimeout(timeout);
+  }, [titleIndex, charIndex, isDeleting]);
+
+  const displayText = TITLES[titleIndex].slice(0, charIndex);
+
   return (
-    <div>
-      <img
-        alt="profile-picture"
-        loading="eager"
-        width="120"
-        height="200"
-        decoding="async"
-        data-nimg="1"
-        className="rounded-full object-fit w-[50px] h-[50px]"
-        style={{ color: "transparent" }}
-        src="/dhwanil_photo.png"
-      ></img>
-      <h1 className="font-medium text-gray-900 mt-2 text-xl font-heading">
-        Dhwanil Vyas
-      </h1>
-      <p className="text-gray-500">Software engineer</p>
-      <div className="flex flex-row justify-between items-center mt-6">
-        <div className="flex flex-row gap-x-3">
-          <a target="_blank" rel="noreferrer" href="https://x.com/vyasdhwanil">
-            <img
-              alt="Twitter"
-              loading="lazy"
-              width="24"
-              height="24"
-              decoding="async"
-              data-nimg="1"
-              style={{ color: "transparent" }}
-              src="/x.svg"
-            />
-          </a>
-          <a target="_blank" rel="noreferrer" href="https://github.com/dhwanilvyas">
-            <img
-              alt="Github"
-              loading="lazy"
-              width="24"
-              height="24"
-              decoding="async"
-              data-nimg="1"
-              style={{ color: "transparent" }}
-              src="/github.svg"
-            />
-          </a>
-          <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/vyasdhwanil">
-            <img
-              alt="Linkedin"
-              loading="lazy"
-              width="24"
-              height="24"
-              decoding="async"
-              data-nimg="1"
-              style={{ color: "transparent" }}
-              src="/linkedin.svg"
-            />
-          </a>
-          <a target="_blank" rel="noreferrer" href="https://topmate.io/dhwanilvyas">
-            <img
-              alt="Topmate"
-              loading="lazy"
-              width="24"
-              height="24"
-              decoding="async"
-              data-nimg="1"
-              style={{ color: "transparent" }}
-              src="/topmate.svg"
-            />
-          </a>
+    <section id="hero">
+      <div className="hero-content">
+        <p className="hero-greeting">👋 Hi, I&apos;m</p>
+        <h1 className="hero-name">Dhwanil Vyas</h1>
+        <h2 className="hero-title">
+          <span className="typing-text">{displayText}</span>
+        </h2>
+        <p className="hero-description">
+          Crafting exceptional digital experiences with modern web technologies
+        </p>
+        <div className="hero-cta">
+          <Link href="#contact" className="btn btn-primary">
+            <span>Let&apos;s Talk</span>
+          </Link>
+          <Link href="#about" className="btn btn-secondary">
+            <span>Learn More</span>
+          </Link>
         </div>
       </div>
-      <div className="border-b w-full my-8"></div>
-    </div>
+      <div className="scroll-indicator">
+        <ChevronDown size={32} strokeWidth={2} />
+      </div>
+    </section>
   );
-};
-
-export default Hero;
+}

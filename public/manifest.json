@@ -1,0 +1,15 @@
+{
+  "name": "Dhwanil Vyas - Software Engineer",
+  "short_name": "Dhwanil Vyas",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#2563eb",
+  "background_color": "#f5f6fa",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    }
+  ]
+}
