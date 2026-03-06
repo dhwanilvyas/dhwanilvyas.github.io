@@ -407,7 +407,8 @@ section.portfolio-section {
   object-fit: cover;
 }
 
-.profile-card h3 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+.profile-card { color: var(--text-primary); }
+.profile-card h3 { font-size: 1.8rem; margin-bottom: 0.5rem; color: var(--text-primary); }
 .profile-card p { color: var(--text-secondary); margin-bottom: 1.5rem; }
 
 .social-links {
@@ -493,7 +494,8 @@ section.portfolio-section {
   background-clip: text;
 }
 
-.skill-card h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+.skill-card { color: var(--text-primary); }
+.skill-card h3 { font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary); }
 .skill-card p { color: var(--text-secondary); margin-bottom: 0; }
 
 /* Projects */
@@ -597,6 +599,10 @@ section.portfolio-section {
   box-shadow: var(--card-hover-shadow);
 }
 
+.timeline-content {
+  color: var(--text-primary);
+}
+
 .timeline-dot {
   position: absolute;
   left: 50%;
@@ -610,7 +616,7 @@ section.portfolio-section {
 }
 
 .timeline-date { color: var(--accent-blue); font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem; }
-.timeline-content h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+.timeline-content h3 { font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary); }
 .timeline-content h4 { color: var(--text-secondary); margin-bottom: 1rem; }
 .timeline-content p { color: var(--text-secondary); line-height: 1.8; }
 
@@ -646,7 +652,8 @@ section.portfolio-section {
   box-shadow: var(--card-hover-shadow);
 }
 
-.contact-card h3 { font-size: 2rem; margin-bottom: 1rem; }
+.contact-card { color: var(--text-primary); }
+.contact-card h3 { font-size: 2rem; margin-bottom: 1rem; color: var(--text-primary); }
 .contact-card p { color: var(--text-secondary); font-size: 1.2rem; margin-bottom: 2rem; line-height: 1.8; }
 
 .contact-email {
@@ -699,18 +706,6 @@ section.portfolio-section {
   transform: translateY(-10px) rotate(360deg);
   box-shadow: 0 15px 30px rgba(79, 142, 247, 0.4);
 }
-
-/* Footer */
-footer.portfolio-footer {
-  padding: 2rem 5%;
-  text-align: center;
-  border-top: 1px solid var(--border-subtle);
-  background: var(--bg-dark);
-}
-
-.portfolio-footer p { color: var(--text-secondary); }
-.portfolio-footer a { color: var(--accent-blue); text-decoration: none; }
-.portfolio-footer a:hover { text-decoration: underline; }
 
 /* Fade-in */
 .fade-in {

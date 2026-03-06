@@ -22,11 +22,6 @@ export default function Page() {
         <Experience />
         <Contact />
       </main>
-      <footer className="portfolio-footer">
-        <p>
-          © {new Date().getFullYear()} Dhwanil Vyas. Built with Next.js.
-        </p>
-      </footer>
       <FadeInObserver />
     </>
   );
