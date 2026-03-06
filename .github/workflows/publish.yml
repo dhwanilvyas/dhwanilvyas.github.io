@@ -1,24 +1,39 @@
-name: publish-to-github-pages
+name: Deploy static content to GitHub Pages
 
 on:
   push:
     branches:
       - master
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: read
+      pages: write      # Grants the GITHUB_TOKEN write permission to the pages environment
+      id-token: write   # Grants the GITHUB_TOKEN write permission for OpenID Connect (OIDC)
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy GitHub Pages site
-        uses: actions/deploy-pages@v4.0.5
-          
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      # Add build steps here if your project needs to be compiled (e.g., npm run build, hugo build, etc.)
+      # - name: Build Project
+      #   run: npm run build
+      
+      # The next step configures the GitHub Pages environment
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Point this to the directory that contains your static files (e.g., './public', './build', './out')
+          path: './' 
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
