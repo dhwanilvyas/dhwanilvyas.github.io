@@ -16,8 +16,7 @@ const PROJECTS = [
 export default function Projects() {
   return (
     <section id="projects" className="portfolio-section">
-      <h2 className="section-title">Projects</h2>
-      <p className="section-subtitle">Things I&apos;ve built</p>
+      <h2 className="section-title">Things I&apos;ve built</h2>
       <div className="projects-grid">
         {PROJECTS.map(({ href, name, description }) => (
           <a

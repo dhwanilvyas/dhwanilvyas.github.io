@@ -1,7 +1,5 @@
 "use client";
 
-const THEME_KEY = "theme";
-
 export function getSystemTheme(): "dark" | "light" {
   if (typeof window === "undefined") return "light";
   return window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -14,14 +12,8 @@ export function applyTheme(theme: "dark" | "light" | null) {
   const html = document.documentElement;
   if (theme === "dark" || theme === "light") {
     html.setAttribute("data-theme", theme);
-    try {
-      localStorage.setItem(THEME_KEY, theme);
-    } catch {}
   } else {
     html.removeAttribute("data-theme");
-    try {
-      localStorage.removeItem(THEME_KEY);
-    } catch {}
   }
 }
 

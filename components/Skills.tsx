@@ -1,11 +1,18 @@
 const SKILLS = [
   { icon: "fab fa-react", name: "React", desc: "Building interactive UIs" },
-  { icon: "fab fa-react", name: "React Native", desc: "Cross-platform mobile apps" },
+  {
+    icon: "fab fa-react",
+    name: "React Native",
+    desc: "Cross-platform mobile apps",
+  },
   { icon: "fab fa-node-js", name: "Node.js", desc: "Server-side JavaScript" },
   { icon: "fas fa-code", name: "TypeScript", desc: "Type-safe development" },
   { icon: "fas fa-fire", name: "Firebase", desc: "Backend as a service" },
-  { icon: "fas fa-project-diagram", name: "GraphQL", desc: "API query language" },
-  { icon: "fas fa-database", name: "MongoDB", desc: "NoSQL database" },
+  {
+    icon: "fas fa-project-diagram",
+    name: "GraphQL",
+    desc: "API query language",
+  },
   { icon: "fas fa-database", name: "PostgreSQL", desc: "Relational database" },
   { icon: "fab fa-js", name: "JavaScript", desc: "Core programming language" },
 ];
@@ -13,8 +20,7 @@ const SKILLS = [
 export default function Skills() {
   return (
     <section id="skills" className="portfolio-section">
-      <h2 className="section-title">Technical Skills</h2>
-      <p className="section-subtitle">Technologies I work with</p>
+      <h2 className="section-title">Technologies I work with</h2>
       <div className="skills-grid">
         {SKILLS.map(({ icon, name, desc }) => (
           <div key={name} className="skill-card fade-in">

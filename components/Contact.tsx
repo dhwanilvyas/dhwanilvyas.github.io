@@ -1,8 +1,7 @@
 export default function Contact() {
   return (
     <section id="contact" className="portfolio-section">
-      <h2 className="section-title">Get In Touch</h2>
-      <p className="section-subtitle">Let&apos;s work together</p>
+      <h2 className="section-title">Let&apos;s work together</h2>
       <div className="contact-content">
         <div className="contact-card fade-in">
           <h3>Have a project in mind?</h3>

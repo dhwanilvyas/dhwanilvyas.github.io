@@ -33,7 +33,6 @@ export default function Experience() {
   return (
     <section id="experience" className="portfolio-section">
       <h2 className="section-title">Experience</h2>
-      <p className="section-subtitle">My professional journey</p>
       <div className="timeline">
         {EXPERIENCES.map(({ date, title, company, description }) => (
           <div key={date + company} className="timeline-item fade-in">
