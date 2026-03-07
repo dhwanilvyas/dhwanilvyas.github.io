@@ -1,6 +1,6 @@
 const PROJECTS = [
   {
-    href: "https://play.google.com/store/apps/details?id=com.mdtsindia",
+    href: "https://play.google.com/store/apps/details?id=com.mdtsapp&hl=en_IN",
     name: "RTO app",
     description:
       "Single handedly built a cross-platform mobile application (React Native, Firebase) with 50k+ downloads, enabling users to practice for driver's license tests online.",
