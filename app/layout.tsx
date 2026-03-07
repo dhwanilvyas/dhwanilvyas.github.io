@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { themeInitScript } from "@/lib/theme-init";
 import JsonLd from "@/components/JsonLd";
@@ -95,7 +95,7 @@ export default function RootLayout({
         />
         {children}
       </body>
-      <GoogleTagManager gtmId="G-REV0NK79N4" />
+      <GoogleAnalytics gaId="G-PZ715R5GYN" />
     </html>
   );
 }
