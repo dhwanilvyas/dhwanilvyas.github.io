@@ -62,7 +62,7 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.json",
   icons: {
-    icon: "/favicon.png",
+    icon: "/dhwanil_photo.png",
   },
 };
 

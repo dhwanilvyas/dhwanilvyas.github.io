@@ -58,7 +58,7 @@ export default function Hero() {
   return (
     <section id="hero">
       <div className="hero-about-content">
-        <div className="profile-card fade-in">
+        <div className="profile-card">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/dhwanil_photo.png"
@@ -84,7 +84,7 @@ export default function Hero() {
             ))}
           </div>
         </div>
-        <div className="about-text fade-in">
+        <div className="about-text">
           <p className="hero-greeting">👋 Hi, I&apos;m</p>
           <h1 className="hero-name">Dhwanil Vyas</h1>
           <h3 className="hero-about-heading">
