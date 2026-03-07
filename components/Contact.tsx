@@ -24,7 +24,7 @@ export default function Contact() {
               <i className="fab fa-github" />
             </a>
             <a
-              href="https://linkedin.com/in/dhwanilvyas"
+              href="https://linkedin.com/in/vyasdhwanil"
               target="_blank"
               rel="noopener noreferrer"
               title="LinkedIn"
@@ -32,7 +32,7 @@ export default function Contact() {
               <i className="fab fa-linkedin-in" />
             </a>
             <a
-              href="https://twitter.com/dhwanilvyas"
+              href="https://twitter.com/vyasdhwanil"
               target="_blank"
               rel="noopener noreferrer"
               title="Twitter"

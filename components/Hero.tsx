@@ -13,8 +13,8 @@ const TITLES = [
 
 const SOCIAL = [
   { href: "https://github.com/dhwanilvyas", icon: "fab fa-github" },
-  { href: "https://linkedin.com/in/dhwanilvyas", icon: "fab fa-linkedin-in" },
-  { href: "https://twitter.com/dhwanilvyas", icon: "fab fa-twitter" },
+  { href: "https://linkedin.com/in/vyasdhwanil", icon: "fab fa-linkedin-in" },
+  { href: "https://twitter.com/vyasdhwanil", icon: "fab fa-twitter" },
 ];
 
 export default function Hero() {
