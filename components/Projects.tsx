@@ -6,6 +6,11 @@ const PROJECTS = [
       "Single handedly built a cross-platform mobile application (React Native, Firebase) with 50k+ downloads, enabling users to practice for driver's license tests online.",
   },
   {
+    href: "https://sequioahospitality.com/",
+    name: "Sequioa hospitality",
+    description: "Built a marketing site for Sequoia Hospitality, a company offering franchise, turnkey, and management services. Delivered a fast, static Next.js site with a blog (Markdown → HTML), SEO (Open Graph, JSON-LD, sitemap), and auto-posts new posts to X, LinkedIn, and Instagram."
+  },
+  {
     href: "#",
     name: "Employee management system",
     description:
